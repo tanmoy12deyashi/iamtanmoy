@@ -1,0 +1,22 @@
+{
+  "name": "iamtanmoy",
+  "version": "1.0.0",
+  "description": "This is a blogging site",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tanmoy12deyashi/iamtanmoy.git"
+  },
+  "author": "Tan Moy Deyashi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tanmoy12deyashi/iamtanmoy/issues"
+  },
+  "homepage": "https://github.com/tanmoy12deyashi/iamtanmoy#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
