@@ -1,0 +1,189 @@
+{{> partial/header}}
+<style>
+    .search {
+        width: 100%;
+        position: relative;
+        display: flex;
+    }
+    .searchTerm {
+        width: 100%;
+        border: 3px solid #0085A1;
+        border-right: none;
+        padding: 2px;
+        height: 40px;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        color: #9DBFAF;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .searchButton {
+        width: 40px;
+        height: 40px;
+        border: 1px solid #0085A1;
+        background: #0085A1;
+        text-align: center;
+        color: #fff;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        font-size: 20px;
+    }
+
+    .searchTerm:focus{
+        color: #000;
+        font-weight: bold;
+        font-style: italic;
+    }
+    .loader {
+        border: 16px solid #f3f3f3;
+        border-radius: 50%;
+        border-top: 16px solid #0085A1;
+        border-bottom: 16px solid #0085A1;
+        width: 120px;
+        height: 120px;
+        -webkit-animation: spin 2s linear infinite;
+        animation: spin 2s linear infinite;
+    }
+
+    @-webkit-keyframes spin {
+        0% { -webkit-transform: rotate(0deg); }
+        100% { -webkit-transform: rotate(360deg); }
+    }
+
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('assets/img/home-bg.jpg')">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="site-heading">
+                    <h1>Let's Solve Code</h1>
+                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Main Content-->
+<div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+        <div class="col-md-10 col-lg-8 col-xl-7">
+            <!-- Post search-->
+            <div class="post-preview search">
+                <input type="text" class="searchTerm" name="" id="" placeholder="What are you looking for?"/>
+                <button type="submit" class="searchButton">
+                    <i class="fa fa-search"></i>
+                 </button>
+            </div>
+            <!-- Post loader-->
+            <div align="center"> <div class="loader mt-5"></div> </div>
+
+            <!-- Post preview-->
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
+                    <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
+                </a>
+                <p class="post-meta">
+                    Posted by
+                    <a href="#!">Start Bootstrap</a>
+                    on September 24, 2021
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <!-- Post preview-->
+            <div class="post-preview">
+                <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
+                <p class="post-meta">
+                    Posted by
+                    <a href="#!">Start Bootstrap</a>
+                    on September 18, 2021
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <!-- Post preview-->
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">Science has not yet mastered prophecy</h2>
+                    <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
+                </a>
+                <p class="post-meta">
+                    Posted by
+                    <a href="#!">Start Bootstrap</a>
+                    on August 24, 2021
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <!-- Post preview-->
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">Failure is not an option</h2>
+                    <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                </a>
+                <p class="post-meta">
+                    Posted by
+                    <a href="#!">Start Bootstrap</a>
+                    on July 8, 2021
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">Failure is not an option</h2>
+                    <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                </a>
+                <p class="post-meta">
+                    Posted by
+                    <a href="#!">Start Bootstrap</a>
+                    on July 8, 2021
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">Failure is not an option</h2>
+                    <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                </a>
+                <p class="post-meta">
+                    Posted by
+                    <a href="#!">Start Bootstrap</a>
+                    on July 8, 2021
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <div class="post-preview">
+                <a href="post.html">
+                    <h2 class="post-title">Failure is not an option</h2>
+                    <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
+                </a>
+                <p class="post-meta">
+                    Posted by
+                    <a href="#!">Start Bootstrap</a>
+                    on July 8, 2021
+                </p>
+            </div>
+            <!-- Divider-->
+            <hr class="my-4" />
+            <!-- Pager-->
+            <!--div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Older Posts →</a></div>
+            <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">38 More Posts</a></div-->
+        </div>
+    </div>
+</div>
+
+{{> partial/footer}}
+<script src="js/easydatetimeformat.js"></script>
+
+<!--include index js-->
+<script src="js/index.js"></script>
