@@ -1,16 +1,141 @@
-<p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-<p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-<p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-<p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-<p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-<h2 class="section-heading">The Final Frontier</h2>
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-<p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-<blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-<p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-<h2 class="section-heading">Reaching for the Stars</h2>
-<p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-<a href="#!"><img class="img-fluid" src="../assets/img/post-sample-image.jpg" alt="..." /></a>
-<span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-<p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-<p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
+<h2 class="section-heading">What is HTTP?</h2>
+<p>HTTP stands for Hyper Text Transfer Protcol. It is an application-layer protocol for transmitting hypermedia documents, such as HTML(Hyper Text Markup Language). It was designed for communication between web browsers and web servers, but it can also be used for other purposes. HTTP is a stateless protocol, meaning that the server does not keep any data (state) between two requests.</p>
+
+<h2 class="section-heading">What Are HTTP Request Methods?</h2>
+<p>There are various types of HTTP request methods, but each one is assigned for a specific purpose. Request methods are case-sensitive, and should always be noted in upper case.</p>
+
+<h2 class="section-heading">Various Types of HTTP Request Methods</h2>
+<ul>
+    <li>GET</li>
+    <li>POST</li>
+    <li>PUT</li>
+    <li>HEAD</li>
+    <li>DELETE</li>
+    <li>PATCH</li>
+    <li>TRACE</li>
+    <li>CONNECT</li>
+    <li>OPTIONS</li>
+</ul>
+<p>The two most common HTTP methods are: GET and POST.</p>
+
+<h3>GET Method</h3>
+<p>GET method is used to retrieve whatever information is identified by the Request-URL. <br> The query string (name & value pairs) is sent in the URL of a GET request: <br> <code> /text.php?name1=value1&name2=value2</code></p>
+<ul>
+    <li>GET requests can be cached</li>
+    <li>GET requests remain in the browser history</li>
+    <li>GET requests can be bookmarked</li>
+    <li>GET requests should never be used when dealing with sensitive data</li>
+    <li>GET requests have length restrictions</li>
+    <li>GET requests are only used to request data (not modify)</li>
+</ul>
+<h5>Some Extra Info about GET method</h5>
+<ul>
+    <li>GET Request has body: No</li>
+    <li>Successful response has body: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: Yes</li>
+    <li>Allowed in HTML forms: Yes</li>
+</ul>
+
+<h3>POST Method</h3>
+<p>Another popular HTTP request method is POST. In web communication, POST requests are utilized to send data to a server to create or update a resource. The information submitted to the server with POST request method is archived in the request body of the HTTP request. The HTTP POST method is often used to send user-generated data to a server. One example is when a user uploads a profile details.</p>
+<ul>
+    <li>POST requests are never cached</li>
+    <li>POST requests do not remain in the browser history</li>
+    <li>POST requests cannot be bookmarked</li>
+    <li>POST requests have no restrictions on data length</li>
+</ul>
+<h5>Some Extra Info about POST method</h5>
+<ul>
+    <li>POST Request has body: Yes</li>
+    <li>Successful response has body: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: Only if freshness information is included</li>
+    <li>Allowed in HTML forms: Yes</li>
+</ul>
+
+<h3>PUT Method</h3>
+<p>PUT is used to send data to a server to create/update a resource. <br> The difference between POST and PUT is that PUT requests are idempotent. That is, calling the same PUT request multiple times will always produce the same result. In contrast, calling a POST request repeatedly have side effects of creating the same resource multiple times.</p>
+<h5>Some Extra Info about PUT method</h5>
+<ul>
+    <li>PUT Request has body: Yes</li>
+    <li>Successful response has body: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: No</li>
+    <li>Allowed in HTML forms: No</li>
+</ul>
+
+<h3>HEAD Method</h3>
+<p>HEAD is almost identical to GET, but without the response body. <br> In other words, if GET <code> /users</code> returns a list of users, then HEAD <code> /users </code> will make the same request but will not return the list of users. <br> HEAD requests are useful for checking what a GET request will return before actually making a GET request - like before downloading a large file or response body.</p>
+<h5>Some Extra Info about HEAD method</h5>
+<ul>
+    <li>HEAD Request has body: No</li>
+    <li>Successful response has body: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: Yes</li>
+    <li>Allowed in HTML forms: No</li>
+</ul>
+
+<h3>DELETE Method</h3>
+<p>Just as it sounds, the DELETE request method is used to delete resources indicated by a specific URL. Making a DELETE request will remove the targeted resource.</p>
+<h5>Some Extra Info about DELETE method</h5>
+<ul>
+    <li>DELETE Request has body: May be</li>
+    <li>Successful response has body: May be</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: No</li>
+    <li>Allowed in HTML forms: No</li>
+</ul>
+
+<h3>PATCH Method</h3>
+<p>A PATCH request is similar to POST and PUT. However, its primary purpose is to apply partial modifications to the resource. And just like a POST request, the PATCH request is also non-idempotent. Additionally, unlike POST and PUT which require a full user entity, with PATCH requests, you may only send the updated username.</p>
+<h5>Some Extra Info about PATCH method</h5>
+<ul>
+    <li>PATCH Request has body: Yes</li>
+    <li>Successful response has body: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: No</li>
+    <li>Allowed in HTML forms: No</li>
+</ul>
+
+<h3>TRACE Method</h3>
+<p>TRACE requests are used to invoke a remote, application loop-back test along the path to the target resource. The TRACE method allows clients to view whatever message is being received at the other end of the request chain so that they can use the information for testing or diagnostic functions.</p>
+<h5>Some Extra Info about TRACE method</h5>
+<ul>
+    <li>TRACE Request has body: No</li>
+    <li>Successful response has body: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: No</li>
+    <li>Allowed in HTML forms: No</li>
+</ul>
+
+<h3>CONNECT Method</h3>
+<p>The HTTP CONNECT method starts two-way communications with the requested resource. It can be used to open a tunnel. <br> <span style="background-color: yellow;">For example, the CONNECT method can be used to access websites that use SSL (HTTPS). The client asks an HTTP Proxy server to tunnel the TCP connection to the desired destination. The server then proceeds to make the connection on behalf of the client. Once the connection has been established by the server, the Proxy server continues to proxy the TCP stream to and from the client.</span> <br> CONNECT is a hop-by-hop method.</p>
+<h5>Some Extra Info about CONNECT method</h5>
+<ul>
+    <li>CONNECT Request has body: No</li>
+    <li>Successful response has body: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: No</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: No</li>
+    <li>Allowed in HTML forms: No</li>
+</ul>
+
+<h3>OPTIONS Method</h3>
+<p>The HTTP OPTIONS method requests permitted communication options for a given URL or server. A client can specify a URL with this method, or an asterisk (*) to refer to the entire server.</p>
+<h5>Some Extra Info about OPTIONS method</h5>
+<ul>
+    <li>OPTIONS Request has body: No</li>
+    <li>Successful response has body: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.1" target="_blank">Safe Methods</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.2" target="_blank">Idempotent</a>: Yes</li>
+    <li><a href="https://datatracker.ietf.org/doc/html/rfc7231#section-4.2.3" target="_blank">Cacheable</a>: No</li>
+    <li>Allowed in HTML forms: No</li>
+</ul>

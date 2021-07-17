@@ -3,9 +3,9 @@
 		"id": 1,
 		"create_date": "02-02-2021",
 		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript  1",
-		"title": "Man must explore, and this is exploration at its greatest",
-		"sub_title": "Problems look mighty small from 150 miles up",
+		"topic": "HTTP Methods",
+		"title": "What is HTTP? What are HTTP Methods? Various types of HTTP Methods.",
+		"sub_title": "A brief introduction about HTTP methods",
 		"tags": ["javascript"],
 		"keyword": ["javascript", "js"]
 	},
@@ -13,62 +13,8 @@
 		"id": 2,
 		"create_date": "02-02-2021",
 		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript",
+		"topic": "Test ",
 		"title": "A JS module 2. This is a test.",
-		"sub_title": "Problems look mighty small from 150 miles up",
-		"tags": ["javascript"]
-	},
-	{
-		"id": 3,
-		"create_date": "02-02-2021",
-		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript",
-		"title": "A JS module 1. This is a test.",
-		"sub_title": "Problems look mighty small from 150 miles up",
-		"tags": ["javascript"]
-	},
-	{
-		"id": 4,
-		"create_date": "02-02-2021",
-		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript",
-		"title": "A JS module 2. This is a test.",
-		"sub_title": "Problems look mighty small from 150 miles up",
-		"tags": ["javascript"]
-	},
-	{
-		"id": 5,
-		"create_date": "02-02-2021",
-		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript",
-		"title": "A JS module 1",
-		"sub_title": "Problems look mighty small from 150 miles up",
-		"tags": ["javascript"]
-	},
-	{
-		"id": 6,
-		"create_date": "02-02-2021",
-		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript",
-		"title": "A JS module 2. This is a test.",
-		"sub_title": "Problems look mighty small from 150 miles up",
-		"tags": ["javascript"]
-	},
-	{
-		"id": 7,
-		"create_date": "02-02-2021",
-		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript",
-		"title": "A JS module 1",
-		"sub_title": "Problems look mighty small from 150 miles up",
-		"tags": ["javascript"]
-	},
-	{
-		"id": 8,
-		"create_date": "02-02-2021",
-		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript",
-		"title": "A JS module 2",
 		"sub_title": "Problems look mighty small from 150 miles up",
 		"tags": ["javascript"]
 	}
