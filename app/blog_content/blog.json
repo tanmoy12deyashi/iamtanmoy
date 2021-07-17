@@ -3,10 +3,11 @@
 		"id": 1,
 		"create_date": "02-02-2021",
 		"created_by": "Tan Moy Deyashi",
-		"topic": "Javascript    1",
+		"topic": "Javascript  1",
 		"title": "Man must explore, and this is exploration at its greatest",
 		"sub_title": "Problems look mighty small from 150 miles up",
-		"tags": ["javascript"]
+		"tags": ["javascript"],
+		"keyword": ["javascript", "js"]
 	},
 	{
 		"id": 2,

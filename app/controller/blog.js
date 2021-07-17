@@ -18,11 +18,11 @@ const $blog = module.exports = {
         blogs = $blog.search('id', req.params.blog_id, blogs);
 
         // if blog not exists
-        if(typeof blogs == 'undefined' || !fs.existsSync(`${SYS_PATH}/app/blog_content/${req.params.blog_id}.html`))
+        if(typeof blogs == 'undefined' || !fs.existsSync(`${SYS_PATH}/app/blog_content/content/${req.params.blog_id}.html`))
             return res.send({sts: 'Blog not found'});
 
         // get blog content
-        let blogContent = fs.readFileSync(`${SYS_PATH}/app/blog_content/${req.params.blog_id}.html`);
+        let blogContent = fs.readFileSync(`${SYS_PATH}/app/blog_content/content/${req.params.blog_id}.html`);
 
         // render b.log
         res.render('blog', {blogs: blogs, blogContent: blogContent});
